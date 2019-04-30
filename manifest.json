@@ -1,32 +1,58 @@
 {
-  "summary" : "Navigate artboards in order",
-  "description" : "Use to go to previous or next artboard in order",
-  "releaseNotes" : "Initial release; simple script but probably room for economization",
-  "keywords" : [ "artboard", "keyboard shortcuts", "navigate" ],
-  "languages" : [ "en", "de", "fr", "ja", "ko", "zh", "es", "pt" ],
-  "website" : "https://github.com/iamsolarplexus",
-  "author" : "Rick Case",
-  "helpUrl" : "https://github.com/iamsolarplexus",
-  "main" : "main.js",
-  "version" : "1.0.0",
-  "name" : "TabBetweenArtboards",
-  "host" : {
-    "app" : "XD",
-    "minVersion" : "13.0"
-  },
-  "id" : "6b87acaa",
-  "uiEntryPoints" : [
-      {
-    "label" : "Go to previous Artboard",
-    "type" : "menu",
-    "commandId" : "prevArtboard",
-    "shortcut": {"win": "Ctrl+Alt+A", "mac": "Cmd+Opt+A" }
-  },
-      {
-    "label" : "Go to next Artboard",
-    "type" : "menu",
-    "commandId" : "nextArtboard",
-    "shortcut": {"win": "Ctrl+Alt+D", "mac": "Cmd+Opt+D" }
-  }
-   ]
+    "summary": "Cycle thru artboards w/ keys",
+    "description": "Quickly zoom to view previous or next artboard in layer order ",
+    "releaseNotes": "Initial release; simple script but probably room for economization",
+    "keywords": ["artboard", "keyboard shortcuts", "navigate", "tab", "cycle", "compare artboards", "move"],
+    "languages": ["en", "de", "fr", "ja", "ko", "zh", "es", "pt"],
+    "website": "https://github.com/iamsolarplexus/adobexd-cycle-artboards",
+    "author": "Rick Case",
+    "helpUrl": "https://github.com/iamsolarplexus/adobexd-cycle-artboards",
+    "main": "main.js",
+    "version": "1.0.0",
+    "name": "CycleArtboards",
+    "icons": [{
+        "path": "images/pluginIcon1.png",
+        "width": 48,
+        "height": 48
+    }, {
+        "path": "images/pluginIcon2.png",
+        "width": 96,
+        "height": 96
+    }, {
+        "path": "images/pluginIcon3.png",
+        "width": 144,
+        "height": 144
+    }, {
+        "path": "images/pluginIcon4.png",
+        "width": 192,
+        "height": 192
+    }],
+    "host": {
+        "app": "XD",
+        "minVersion": "13.0"
+    },
+    "id": "6b87acaa",
+    "uiEntryPoints": [{
+        "label": "Cycle thru Artboards",
+        "type": "menu",
+        "menuItems": [{
+                "label": "Go to previous",
+                "type": "menu",
+                "commandId": "prevArtboard",
+                "shortcut": {
+                    "win": "Ctrl+Alt+A",
+                    "mac": "Cmd+Opt+A"
+                }
+            },
+            {
+                "label": "Go to next",
+                "type": "menu",
+                "commandId": "nextArtboard",
+                "shortcut": {
+                    "win": "Ctrl+Alt+D",
+                    "mac": "Cmd+Opt+D"
+                }
+            }
+        ]
+    }]
 }
