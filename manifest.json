@@ -1,0 +1,32 @@
+{
+  "summary" : "Navigate artboards in order",
+  "description" : "Use to go to previous or next artboard in order",
+  "releaseNotes" : "Initial release; simple script but probably room for economization",
+  "keywords" : [ "artboard", "keyboard shortcuts", "navigate" ],
+  "languages" : [ "en", "de", "fr", "ja", "ko", "zh", "es", "pt" ],
+  "website" : "https://github.com/iamsolarplexus",
+  "author" : "Rick Case",
+  "helpUrl" : "https://github.com/iamsolarplexus",
+  "main" : "main.js",
+  "version" : "1.0.0",
+  "name" : "TabBetweenArtboards",
+  "host" : {
+    "app" : "XD",
+    "minVersion" : "13.0"
+  },
+  "id" : "6b87acaa",
+  "uiEntryPoints" : [
+      {
+    "label" : "Go to previous Artboard",
+    "type" : "menu",
+    "commandId" : "prevArtboard",
+    "shortcut": {"win": "Ctrl+Alt+A", "mac": "Cmd+Opt+A" }
+  },
+      {
+    "label" : "Go to next Artboard",
+    "type" : "menu",
+    "commandId" : "nextArtboard",
+    "shortcut": {"win": "Ctrl+Alt+D", "mac": "Cmd+Opt+D" }
+  }
+   ]
+}
