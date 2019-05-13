@@ -1,15 +1,15 @@
 {
-    "summary": "Cycle thru artboards w/ keys",
-    "description": "Quickly zoom to view previous or next artboard in layer order ",
-    "releaseNotes": "Initial release; simple script but probably room for economization",
-    "keywords": ["artboard", "keyboard shortcuts", "navigate", "tab", "cycle", "compare artboards", "move"],
+    "summary": "Navigate artboards with keys",
+    "description": "This plugin allows easy keyboard navigation from currently selected* artboard to the previous (Ctrl+Alt+A) or next (Ctrl+Alt+D) artboard. \n\nEach movement finishes by zooming the artboard to fit.\n\n\n*Note: to allow for a series of movements, \"current selection\" is only used for the first movement, and isn't used again until a new selection is detected.",
+    "releaseNotes": "Users now get a friendly notification when using the commands in a project devoid of artboards. Also, the controls' directions now align with the artboards list, top-down.",
+    "keywords": ["artboard", "keyboard shortcuts", "navigate", "jump", "previous", "move"],
     "languages": ["en", "de", "fr", "ja", "ko", "zh", "es", "pt"],
-    "website": "https://github.com/iamsolarplexus/adobexd-cycle-artboards",
+    "website": "https://github.com/iamsolarplexus/adobexd-goToNextArtboard",
     "author": "Rick Case",
-    "helpUrl": "https://github.com/iamsolarplexus/adobexd-cycle-artboards",
+    "helpUrl": "https://github.com/iamsolarplexus/adobexd-goToNextArtboard",
     "main": "main.js",
-    "version": "1.0.0",
-    "name": "CycleArtboards",
+    "version": "1.0.6",
+    "name": "Go to Next Artboard",
     "icons": [{
         "path": "images/pluginIcon1.png",
         "width": 48,
@@ -33,7 +33,7 @@
     },
     "id": "6b87acaa",
     "uiEntryPoints": [{
-        "label": "Cycle thru Artboards",
+        "label": "Go to Next/Prev Artboard",
         "type": "menu",
         "menuItems": [{
                 "label": "Go to previous",
