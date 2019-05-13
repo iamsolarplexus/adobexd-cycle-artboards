@@ -1,5 +1,11 @@
 # adobexd-goToNextArtboard
-Adobe XD Plugin to go to next or previous artboard.  Uses current selection as a starting point (unless user makes several moves before making a new selection).  
-* Use Ctrl+Alt+A to go to previous (Cmd+Option+A on Mac)
-* Use Ctrl+Alt+D to go to next (Cmd+Option+D on Mac)
-(PageUp / PageDown aren't available to plugin developers yet)
+This Adobe XD Plugin allows users to go to next or previous artboards using keyboard shortcuts:
+
+* <kbd>Ctrl+Alt+A</kbd> to go to previous artboard (Cmd+Option+A on Mac)
+* <kbd>Ctrl+Alt+D</kbd> to go to next artboard (Cmd+Option+D on Mac)
+
+It starts from the currently selected artboard (or selected element's artboard).  To allow for several movements at a time, "current selection" is used for the first movement, and isn't used again until a new selection is detected.  
+
+Notes:
+* Each movement finishes by zooming the artboard to fit. This is the fastest way to finish the movement (other movements allowed by API have a panning animation).
+* PageUp / PageDown aren't available to plugin developers as of this release*
