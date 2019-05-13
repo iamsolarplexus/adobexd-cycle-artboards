@@ -1,8 +1,8 @@
 # adobexd-goToNextArtboard
 This Adobe XD Plugin allows users to go to next or previous artboards using keyboard shortcuts:
 
-* <kbd>Ctrl+Alt+A</kbd> to go to previous artboard (Cmd+Option+A on Mac)
-* <kbd>Ctrl+Alt+D</kbd> to go to next artboard (Cmd+Option+D on Mac)
+* <kbd>Ctrl+Alt+A</kbd> to go to previous artboard (<kbd>Cmd+Option+A</kbd> on Mac)
+* <kbd>Ctrl+Alt+D</kbd> to go to next artboard (<kbd>Cmd+Option+D</kbd> on Mac)
 
 It starts from the currently selected artboard (or selected element's artboard).  To allow for several movements at a time, "current selection" is used for the first movement, and isn't used again until a new selection is detected.  
 
